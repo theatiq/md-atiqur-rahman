@@ -47,7 +47,11 @@ const Banner = () => {
           <div className="flex gap-2">
             {/* <button className="btn btn-primary">Get Started</button> */}
             <a className="btn btn-outline text-xl">Caontact Me</a>
-            <a className="btn btn-outline text-xl">
+            <a
+              href="/atiqur-resume.pdf"
+              download="Atiqur_Resume.pdf"
+              className="btn mr-3 text-xl btn-outline"
+            >
               Résumé <FaDownload />
             </a>
           </div>

@@ -4,6 +4,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import ProjectDetails from "./pages/ProjectDetails";
+import Experiences from "./pages/Experiences";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
         Oops Page Not found
       </div>
     ),
+  },
+  {
+    path: "experience",
+    element: <Experiences></Experiences>,
   },
   {
     path: "/projects/:projectId",

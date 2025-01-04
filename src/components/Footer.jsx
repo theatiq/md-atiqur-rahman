@@ -1,25 +1,82 @@
 import React from "react";
+import {
+  FaDownload,
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaPhone,
+  FaTwitter,
+  FaWhatsapp,
+  FaYoutube,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="footer bg-base-300 text-base-content p-10">
       <nav>
-        <h6 className="footer-title">Services</h6>
-        <a className="link link-hover">Branding</a>
-        <a className="link link-hover">Design</a>
-        <a className="link link-hover">Marketing</a>
-        <a className="link link-hover">Advertisement</a>
+        <h6 className="footer-title">Contact Info</h6>
+        <a className="link link-hover">Email: theatiq@gmail.com</a>
+        <a className="link link-hover">Phone: +8801677836566</a>
+        <a className="link link-hover">WhatsApp: +8801677836566</a>
+        <a className="link link-hover">Location: Cumilla, Bangladesh</a>
       </nav>
       <nav>
-        <h6 className="footer-title">Company</h6>
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
+        <h6 className="footer-title">Quick Links</h6>
+        <a className="link link-hover" href="#about">
+          About Me
+        </a>
+        <a className="link link-hover" href="#contacts">
+          Contacts
+        </a>
+        <a className="link link-hover" href="#experiences">
+          Experiences
+        </a>
+        <a className="link link-hover" href="#projects">
+          Projects
+        </a>
       </nav>
       <nav>
         <h6 className="footer-title">Social</h6>
-        <div className="grid grid-flow-col gap-4">
+        <div className="flex gap-7 mb-5 text-3xl">
+            <Link
+              to={"https://github.com/theatiq"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub />
+            </Link>
+            <Link
+              to={"https://www.linkedin.com/in/atiqurdottech/"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin />
+            </Link>
+            <Link
+              to={"https://web.facebook.com/atiqur.tech"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook />
+            </Link>
+            <Link
+              to={"https://www.instagram.com/atiqur.tech/"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
+            </Link>
+            <Link
+              to={"https://www.youtube.com/@atiqur.tech."}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaYoutube />
+            </Link>
+          </div>
+        {/* <div className="grid grid-flow-col gap-4">
           <a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +110,7 @@ const Footer = () => {
               <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
             </svg>
           </a>
-        </div>
+        </div> */}
       </nav>
     </footer>
   );

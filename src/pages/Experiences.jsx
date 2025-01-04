@@ -1,4 +1,5 @@
 import React from "react";
+import companyImg from "/src/assets/sjibl.png";
 
 const experiences = [
   {
@@ -20,7 +21,10 @@ const Experiences = () => {
       {experiences.map((exp, index) => (
         <div key={index} className="mb-6">
           <h3 className="text-xl font-semibold">{exp.title}</h3>
-          <p className="text-sm text-gray-600">{exp.company}</p>
+          <div className="flex">
+            <img className="w-5" src={companyImg} alt="" />
+            <p className="text-sm text-gray-600">{exp.company}</p>
+          </div>
           <p className="text-sm text-gray-600">{exp.duration}</p>
           <ul className="list-disc ml-5 mt-2 text-gray-700">
             {exp.description.map((item, i) => (

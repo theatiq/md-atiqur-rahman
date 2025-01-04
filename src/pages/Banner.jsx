@@ -6,7 +6,9 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedin,
+  FaPhone,
   FaTwitter,
+  FaWhatsapp,
   FaYoutube,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -28,7 +30,7 @@ const Banner = () => {
             life.Explore my portfolio and see how I can help you achieve your
             goals.
           </p>
-          <div className="flex gap-8 mb-5 text-3xl">
+          <div className="flex gap-7 mb-5 text-3xl">
             <Link
               to={"https://github.com/theatiq"}
               target="_blank"
@@ -70,7 +72,7 @@ const Banner = () => {
             {/* <a className="btn btn-outline text-xl">Caontact Me</a> */}
             <div className="flex gap-4">
               <a href="tel:+8801677836566" className="btn btn-outline text-xl">
-                Call Me
+                <FaPhone></FaPhone>
               </a>
               <a
                 href="https://wa.me/01677836566"
@@ -78,7 +80,7 @@ const Banner = () => {
                 rel="noopener noreferrer"
                 className="btn btn-outline text-xl"
               >
-                WhatsApp Me
+                <FaWhatsapp></FaWhatsapp>
               </a>
             </div>
 

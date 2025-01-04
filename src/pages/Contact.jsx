@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import contactImg from "/src/assets/contact.jpg";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -41,7 +42,7 @@ const ContactPage = () => {
       {/* Left Side */}
       <div className="w-full md:w-1/2 p-4 flex items-center justify-center bg-gray-100">
         <img
-          src="/images/contact-us.jpg" // Replace with your contact image path
+          src={contactImg} // Replace with your contact image path
           alt="Contact Us"
           className="w-full h-auto max-w-md rounded-lg shadow-lg"
         />

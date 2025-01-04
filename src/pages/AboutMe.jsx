@@ -1,5 +1,6 @@
 import React from "react";
 import workingImg from "/src/assets/working.avif";
+import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
@@ -26,7 +27,9 @@ const AboutMe = () => {
               trends and continuously learning new technologies to keep my
               skills sharp. Let's connect and create something amazing together!
             </p>
-            <button className="btn btn-primary">Get Started</button>
+            <a href="#projects">
+              <button className="btn btn-outline">View Projects</button>
+            </a>
           </div>
         </div>
       </div>

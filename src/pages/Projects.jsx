@@ -6,7 +6,7 @@ const projects = [
     description:
       "A comprehensive system for managing stock levels, sales, and purchases.",
     technologies: ["JavaScript", "Node.js", "MongoDB"],
-    image: "/images/inventory-management.jpg", // Replace with the actual image path
+    image: "/src/assets/blog.png", // Replace with the actual image path
     detailsLink: "/projects/inventory-management", // Replace with the route for details
   },
   {
@@ -14,15 +14,15 @@ const projects = [
     description:
       "A platform where gamers can review and rate their favorite games.",
     technologies: ["React", "Tailwind CSS", "Firebase"],
-    image: "/images/crazy-gamer.jpg", // Replace with the actual image path
+    image: "/src/assets/gamer.png", // Replace with the actual image path
     detailsLink: "/projects/crazy-gamer", // Replace with the route for details
   },
   {
     title: "Discount Coupon Finder",
     description:
       "A web application to discover and share discount coupons from popular brands.",
-    technologies: ["React", "Express.js", "MySQL"],
-    image: "/images/coupon-finder.jpg", // Replace with the actual image path
+    technologies: ["React", "Firebase", "Tailwind"],
+    image: "/src/assets/discount.png", // Replace with the actual image path
     detailsLink: "/projects/coupon-finder", // Replace with the route for details
   },
 ];

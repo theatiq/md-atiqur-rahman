@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
+import ProjectDetails from "./pages/ProjectDetails";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
         Oops Page Not found
       </div>
     ),
+  },
+  {
+    path: "/projects/:projectId",
+    element: <ProjectDetails></ProjectDetails>,
   },
 ]);
 

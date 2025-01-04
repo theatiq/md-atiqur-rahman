@@ -8,6 +8,7 @@ import OtherSkills from "./OtherSkills";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "../components/Footer";
+import ContactPage from "./Contact";
 
 const Home = () => {
   return (
@@ -16,10 +17,10 @@ const Home = () => {
       <AboutMe></AboutMe>
       <Experiences></Experiences>
       <Skills></Skills>
-      {/* <Educations></Educations>
-      <OtherSkills></OtherSkills>
+      <Educations></Educations>
+      {/* <OtherSkills></OtherSkills> */}
       <Projects></Projects>
-      <Contact></Contact> */}
+      <ContactPage></ContactPage>
       <Footer></Footer>
     </div>
   );

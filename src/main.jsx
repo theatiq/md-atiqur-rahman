@@ -4,16 +4,13 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import ProjectDetails from "./pages/ProjectDetails";
+import ErrorPage from "./pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
-    errorElement: (
-      <div className="text-center text-4xl text-orange-600">
-        Oops Page Not found
-      </div>
-    ),
+    errorElement: <ErrorPage></ErrorPage>
   },
   {
     path: "/projects/:projectId",

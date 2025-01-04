@@ -1,19 +1,21 @@
 import React from "react";
-import { useNavigate, useParams } from "react-router-dom"; // Assuming React Router is used
+import { useNavigate, useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const projectDetails = {
   "inventory-management": {
-    title: "Inventory Management System",
+    title: "Tech Blog Site",
     description:
-      "A complete solution for managing inventory levels, sales tracking, and purchase management. Features include user roles, real-time data visualization, and automated restocking alerts.",
-    technologies: ["JavaScript", "Node.js", "MongoDB"],
+      "A dynamic platform tailored for technology enthusiasts to explore, share, and engage with in-depth tech insights.",
+    technologies: ["JavaScript", "Node.js", "MongoDB", "Firebase", "React"],
     image: "/src/assets/blog.png",
     features: [
-      "Real-time inventory tracking",
-      "Automated purchase order generation",
-      "Role-based access control",
+      "Comprehensive Tech Blog: Users can access detailed blog and comment for a variety of blogs across different genres and publishing years.",
+      "User-Generated Content: Registered users can contribute by adding their own blogs and sharing opinions.",
+      "Blog Wishlist: Users can create and manage personalized wishlists for which they want to keep track of.",
+      "Intuitive Navigation: A responsive and visually appealing design ensures easy browsing on both desktop and mobile devices.",
+      "Community Engagement: Features like user profiles and tooltips promote interaction and engagement within the tech blog community.",
     ],
   },
   "crazy-gamer": {
@@ -23,9 +25,11 @@ const projectDetails = {
     technologies: ["React", "Tailwind CSS", "Firebase"],
     image: "/src/assets/gamer.png",
     features: [
-      "Dynamic review system",
-      "Game discussion forums",
-      "Personalized game recommendations",
+      "Comprehensive Game Reviews: Users can access detailed reviews and ratings for a variety of games across different genres and publishing years.",
+      "User-Generated Content: Registered users can contribute by adding their own reviews, sharing opinions, and rating games.",
+      "Game Watchlist: Users can create and manage personalized watchlists for games they want to keep track of.",
+      "Intuitive Navigation: A responsive and visually appealing design ensures easy browsing on both desktop and mobile devices.",
+      "Community Engagement: Features like user profiles and tooltips promote interaction and engagement within the gaming community.",
     ],
   },
   "coupon-finder": {
@@ -35,50 +39,60 @@ const projectDetails = {
     technologies: ["React", "Firebase", "Tailwind"],
     image: "/src/assets/discount.png",
     features: [
-      "Searchable coupon database",
-      "User submissions with moderation",
-      "Brand and category filtering",
+      "You can Find all available coupons in Bangladesh.",
+      "You can get a variety of the latest products.",
+      "You can experience a smooth Single Page functionality.",
+      "Fully functional email-password login and Google login system incorporated.",
     ],
   },
 };
 
 const ProjectDetails = () => {
-  const { projectId } = useParams(); // Extracting project ID from the URL
+  const { projectId } = useParams();
   const project = projectDetails[projectId];
   const navigate = useNavigate();
 
   if (!project) {
-    return <p>Project not found!</p>;
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <p className="text-2xl font-bold text-red-500">Project not found!</p>
+      </div>
+    );
   }
+
   const handleBack = () => {
     navigate(-1);
   };
 
   return (
-    <div>
-      {/* <Navbar></Navbar> */}
-      <div className="project-details-section p-4">
-        <h2 className="text-3xl font-bold mb-4">{project.title}</h2>
+    <div className="min-h-screen flex flex-col">
+      {/* Uncomment Navbar if needed */}
+      {/* <Navbar /> */}
+      <div className="project-details-section flex-grow p-4 md:p-10">
+        <h2 className="text-3xl font-bold mb-6 text-center">{project.title}</h2>
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-[500px] object-cover mb-6"
+          className="w-full h-[300px] md:h-[500px] object-cover mb-6 rounded-lg shadow-md"
         />
         <p className="text-lg text-gray-700 mb-4">{project.description}</p>
         <p className="text-md text-gray-600 mb-4">
           <strong>Technologies:</strong> {project.technologies.join(", ")}
         </p>
         <h3 className="text-2xl font-semibold mb-3">Key Features:</h3>
-        <ul className="list-disc ml-6 text-gray-700">
+        <ul className="list-disc ml-6 text-gray-700 space-y-2">
           {project.features.map((feature, index) => (
             <li key={index}>{feature}</li>
           ))}
         </ul>
-        <button onClick={handleBack} className="btn btn-outline">
-          Go Back
-        </button>
+        <div className="mt-6 text-center">
+          <button onClick={handleBack} className="btn btn-outline">
+            Go Back
+          </button>
+        </div>
       </div>
-      {/* <Footer></Footer> */}
+      {/* Uncomment Footer if needed */}
+      {/* <Footer /> */}
     </div>
   );
 };

@@ -4,6 +4,7 @@ import {
   FaDownload,
   FaFacebook,
   FaGithub,
+  FaInstagram,
   FaLinkedin,
   FaTwitter,
   FaYoutube,
@@ -28,25 +29,59 @@ const Banner = () => {
             goals.
           </p>
           <div className="flex gap-8 mb-5 text-3xl">
-            <Link>
+            <Link
+              to={"https://github.com/theatiq"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub />
             </Link>
-            <Link>
+            <Link
+              to={"https://www.linkedin.com/in/atiqurdottech/"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedin />
             </Link>
-            <Link>
+            <Link
+              to={"https://web.facebook.com/atiqur.tech"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaFacebook />
             </Link>
-            <Link>
-              <FaTwitter />
+            <Link
+              to={"https://www.instagram.com/atiqur.tech/"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
             </Link>
-            <Link>
+            <Link
+              to={"https://www.youtube.com/@atiqur.tech."}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaYoutube />
             </Link>
           </div>
           <div className="flex gap-2">
             {/* <button className="btn btn-primary">Get Started</button> */}
-            <a className="btn btn-outline text-xl">Caontact Me</a>
+            {/* <a className="btn btn-outline text-xl">Caontact Me</a> */}
+            <div className="flex gap-4">
+              <a href="tel:+8801677836566" className="btn btn-outline text-xl">
+                Call Me
+              </a>
+              <a
+                href="https://wa.me/01677836566"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-outline text-xl"
+              >
+                WhatsApp Me
+              </a>
+            </div>
+
             <a
               href="/atiqur-resume.pdf"
               download="Atiqur_Resume.pdf"

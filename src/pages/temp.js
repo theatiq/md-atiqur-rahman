@@ -20,10 +20,10 @@ const ContactPage = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_SERVICE_ID, // Replace with your EmailJS Service ID
-        import.meta.env.VITE_TEMPLATE_ID, // Replace with your EmailJS Template ID
+        "YOUR_SERVICE_ID", // Replace with your EmailJS Service ID
+        "YOUR_TEMPLATE_ID", // Replace with your EmailJS Template ID
         formData,
-        import.meta.env.VITE_PUBLIC_KEY // Replace with your EmailJS Public Key
+        "YOUR_PUBLIC_KEY" // Replace with your EmailJS Public Key
       )
       .then(
         (response) => {
@@ -57,10 +57,7 @@ const ContactPage = () => {
 
           {/* Name Input */}
           <div className="mb-4">
-            <label
-              htmlFor="name"
-              className="block text-sm font-medium text-gray-600"
-            >
+            <label htmlFor="name" className="block text-sm font-medium text-gray-600">
               Name
             </label>
             <input
@@ -77,10 +74,7 @@ const ContactPage = () => {
 
           {/* Email Input */}
           <div className="mb-4">
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium text-gray-600"
-            >
+            <label htmlFor="email" className="block text-sm font-medium text-gray-600">
               Email
             </label>
             <input
@@ -97,10 +91,7 @@ const ContactPage = () => {
 
           {/* Message Input */}
           <div className="mb-4">
-            <label
-              htmlFor="message"
-              className="block text-sm font-medium text-gray-600"
-            >
+            <label htmlFor="message" className="block text-sm font-medium text-gray-600">
               Message
             </label>
             <textarea
@@ -127,9 +118,7 @@ const ContactPage = () => {
 
           {/* Status Message */}
           {statusMessage && (
-            <p className="text-sm text-center text-green-600">
-              {statusMessage}
-            </p>
+            <p className="text-sm text-center text-green-600">{statusMessage}</p>
           )}
         </form>
       </div>
@@ -137,4 +126,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+// export default ContactPage;

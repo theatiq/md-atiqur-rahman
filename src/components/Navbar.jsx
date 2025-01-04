@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/mar.jpg";
+// import logo from "../assets/mar.jpg";
 import { FaDownload } from "react-icons/fa";
 
 const Navbar = () => {
@@ -50,14 +50,15 @@ const Navbar = () => {
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">
-          <img className="w-10 rounded-full" src={logo} alt="" />
+          Atiqur R.
+          {/* <img className="w-10 rounded-full" src={logo} alt="" /> */}
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navOptions}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">
+        <a className="btn mr-3 text-xl">
           Résumé <FaDownload />
         </a>
       </div>

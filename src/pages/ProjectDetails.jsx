@@ -1,7 +1,9 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+
+import blogImg from "../assets/blog.png";
+import gamerImg from "../assets/gamer.png";
+import discountImg from "../assets/discount.png";
 
 const projectDetails = {
   "inventory-management": {
@@ -91,8 +93,6 @@ const ProjectDetails = () => {
           </button>
         </div>
       </div>
-      {/* Uncomment Footer if needed */}
-      {/* <Footer /> */}
     </div>
   );
 };

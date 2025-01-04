@@ -97,7 +97,7 @@ const Banner = () => {
                 Call Me
               </a>
               <a
-                href="https://wa.me/01677836566"
+                href="https://wa.me/+8801677836566"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-outline border-green-500 text-green-500 hover:bg-green-500 hover:text-white text-xl flex items-center gap-2"

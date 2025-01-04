@@ -1,3 +1,25 @@
+// {
+//   "hosting": {
+//     "public": "dist",
+//     "ignore": [
+//       "firebase.json",
+//       "**/.*",
+//       "**/node_modules/**"
+//     ],
+//     "rewrites": [
+//       {
+//         "source": "**",
+//         "destination": "/index.html"
+//       }
+//     ]
+//   }
+// }
+
+
+
+
+
+
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
@@ -127,3 +149,66 @@ const ContactPage = () => {
 };
 
 // export default ContactPage;
+
+
+{projects.map((project, index) => (
+  // <div
+  //   key={index}
+  //   className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+  // >
+  //   {/* Project Image */}
+  //   <img
+  //     src={project.image}
+  //     alt={project.title}
+  //     className="w-full h-48 object-cover rounded-t-lg"
+  //   />
+  //   {/* Project Info */}
+  //   <div className="p-6">
+  //     <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
+  //     <p className="text-gray-600 mb-4">{project.description}</p>
+  //     <p className="text-sm text-gray-500 mb-4">
+  //       <strong>Technologies:</strong>{" "}
+  //       {project.technologies.join(", ")}
+  //     </p>
+  //     <div className="flex flex-wrap gap-4">
+  //       {project.liveLink && (
+  //         <a
+  //           href={project.liveLink}
+  //           target="_blank"
+  //           rel="noopener noreferrer"
+  //           className="text-blue-500 hover:underline"
+  //         >
+  //           Live Site
+  //         </a>
+  //       )}
+  //       {project.serverSide && (
+  //         <a
+  //           href={project.serverSide}
+  //           target="_blank"
+  //           rel="noopener noreferrer"
+  //           className="text-blue-500 hover:underline"
+  //         >
+  //           Server Code
+  //         </a>
+  //       )}
+  //       {project.clientSide && (
+  //         <a
+  //           href={project.clientSide}
+  //           target="_blank"
+  //           rel="noopener noreferrer"
+  //           className="text-blue-500 hover:underline"
+  //         >
+  //           Client Code
+  //         </a>
+  //       )}
+  //     </div>
+  //     {/* Update the details link to use Link from React Router */}
+  //     <NavLink
+  //       to={project.detailsLink} // Use the Link component here
+  //       className="inline-block mt-6 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
+  //     >
+  //       View Details
+  //     </NavLink>
+  //   </div>
+  // </div>
+))}

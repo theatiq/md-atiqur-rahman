@@ -11,7 +11,7 @@ const projectDetails = {
     description:
       "A dynamic platform tailored for technology enthusiasts to explore, share, and engage with in-depth tech insights.",
     technologies: ["JavaScript", "Node.js", "MongoDB", "Firebase", "React"],
-    image: "/src/assets/blog.png",
+    image: "https://i.ibb.co.com/p1nwNcz/blog.webp",
     features: [
       "Comprehensive Tech Blog: Users can access detailed blog and comment for a variety of blogs across different genres and publishing years.",
       "User-Generated Content: Registered users can contribute by adding their own blogs and sharing opinions.",
@@ -25,7 +25,7 @@ const projectDetails = {
     description:
       "An interactive platform for gamers to rate and review their favorite games. Includes discussion forums, trending games, and personalized recommendations.",
     technologies: ["React", "Tailwind CSS", "Firebase"],
-    image: "/src/assets/gamer.png",
+    image: "https://i.ibb.co.com/gTgpmPd/gamer.jpg",
     features: [
       "Comprehensive Game Reviews: Users can access detailed reviews and ratings for a variety of games across different genres and publishing years.",
       "User-Generated Content: Registered users can contribute by adding their own reviews, sharing opinions, and rating games.",
@@ -39,7 +39,7 @@ const projectDetails = {
     description:
       "A platform for discovering and sharing discount coupons from popular brands. Features include advanced search, user-submitted coupons, and admin moderation.",
     technologies: ["React", "Firebase", "Tailwind"],
-    image: "/src/assets/discount.png",
+    image: "https://i.ibb.co.com/G0Vky5W/discount.jpg",
     features: [
       "You can Find all available coupons in Bangladesh.",
       "You can get a variety of the latest products.",

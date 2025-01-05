@@ -43,7 +43,7 @@ const ContactPage = () => {
       <div className="w-full md:w-1/2 p-6 flex items-center justify-center bg-gray-100">
         <img
           src={contactImg} // Replace with your contact image path
-          alt="Contact Us"
+          alt="Contact Me"
           className="w-full h-auto max-w-md rounded-lg shadow-lg"
         />
       </div>
@@ -55,7 +55,7 @@ const ContactPage = () => {
           className="w-full max-w-md bg-white shadow-md rounded-lg p-6"
         >
           <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">
-            Contact Us
+            Contact Me
           </h2>
 
           {/* Name Input */}

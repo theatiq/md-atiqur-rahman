@@ -50,8 +50,8 @@ const Navbar = () => {
         {/* Right Section (Resume Button) */}
         <div className="navbar-end">
           <a
-            href="/atiqur-resume.pdf"
-            download="Atiqur_Resume.pdf"
+            href="/Web_Dev_Resume_of_Md_Atiqur_Rahman.pdf"
+            download="Web_Dev_Resume_of_Md_Atiqur_Rahman.pdf"
             className="btn btn-outline border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white"
           >
             Résumé <FaDownload className="ml-2" />

@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  FaEnvelope,
   FaFacebook,
   FaGithub,
   FaInstagram,
@@ -19,7 +20,7 @@ const Footer = () => {
         <div>
           <h6 className="text-lg font-bold mb-4">Contact Info</h6>
           <p className="mb-2">
-            <FaPhone className="inline mr-2" /> Email:{" "}
+            <FaEnvelope className="inline mr-2" /> Email:{" "}
             <a
               href="mailto:theatiq@gmail.com"
               className="hover:underline text-blue-400"

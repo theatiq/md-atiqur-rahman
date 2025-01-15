@@ -107,8 +107,8 @@ const Banner = () => {
               </a>
             </div>
             <a
-              href="/atiqur-resume.pdf"
-              download="Atiqur_Resume.pdf"
+              href="/Web_Dev_Resume_of_Md_Atiqur_Rahman.pdf"
+              download="Web_Dev_Resume_of_Md_Atiqur_Rahman.pdf"
               className="btn border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white text-xl flex items-center gap-2"
             >
               Résumé <FaDownload />
